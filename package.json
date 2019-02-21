@@ -1,0 +1,19 @@
+{
+  "name": "a1-raspberry",
+  "version": "1.0.0",
+  "description": "Raspberry PI utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "keywords": "raspberry, embedded, IoT, GPIO",
+  "author": "ax1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ax1/a1-raspberry.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ax1/a1-raspberry/issues"
+  }
+}
