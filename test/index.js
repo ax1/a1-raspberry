@@ -1,5 +1,5 @@
 const assert = require('assert')
-const gpio = require('../index')
+const { gpio } = require('../index')
 
 async function test() {
   const PIN = 4
@@ -9,4 +9,5 @@ async function test() {
   const val = await gpio.read(PIN) // return 1 (3.3V)
   assert.deepStrictEqual(val, 1)
 }
+
 test().catch(err => console.error(err))

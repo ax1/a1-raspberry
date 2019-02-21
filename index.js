@@ -1,2 +1,2 @@
-const gpio = require('bin/gpio')
+const gpio = require('./lib/gpio')
 module.exports = { gpio }
