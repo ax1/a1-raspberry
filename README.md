@@ -25,6 +25,7 @@ async function test() {
   await gpio.write(PIN, 1) // set pin to 3.3V
   setTimeout(() => { gpio.write(PIN, 0) }, 5000)
   const val = await gpio.read(PIN) // return 1 (3.3V)
+  gpio.execute('gpio -g write 4 1') // execute a custom command
 }
 
 test().catch(err => console.error(err))

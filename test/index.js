@@ -8,6 +8,7 @@ async function test() {
   setTimeout(() => { gpio.write(PIN, 0) }, 5000)
   const val = await gpio.read(PIN) // return 1 (3.3V)
   assert.deepStrictEqual(val, 1)
+  gpio.execute('gpio -g write 4 1') // execute a custom command
 }
 
 test().catch(err => console.error(err))
