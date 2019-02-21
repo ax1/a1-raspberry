@@ -1,6 +1,6 @@
 {
   "name": "a1-raspberry",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Raspberry PI utilities",
   "main": "index.js",
   "scripts": {
