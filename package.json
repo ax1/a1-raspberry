@@ -6,7 +6,12 @@
   "scripts": {
     "test": "node test/index.js"
   },
-  "keywords": "raspberry, embedded, IoT, GPIO",
+  "keywords": [
+    "raspberry",
+    "embedded",
+    "IoT",
+    "GPIO"
+  ],
   "author": "ax1",
   "license": "MIT",
   "repository": {

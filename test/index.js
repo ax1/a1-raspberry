@@ -11,4 +11,4 @@ async function test() {
   gpio.execute('gpio -g write 4 1') // execute a custom command
 }
 
-test().catch(err => console.error(err))
+test().catch(console.error)
