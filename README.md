@@ -1,4 +1,4 @@
-# A1-RASPBERRY
+# a1-raspberry
 
 Utilities for Raspberry PI devices. Promise based. Zero dependencies.
 
@@ -18,15 +18,10 @@ The module uses the `gpio` command installed in the raspberry. See http://wiring
 
 ```javascript
 const { gpio } = require('a1-raspberry')
-
-async function test() {
-  const PIN = 4
-  await gpio.configure(PIN, 'out') // configure as output
-  await gpio.write(PIN, 1) // set pin to 3.3V
-  setTimeout(() => { gpio.write(PIN, 0) }, 5000)
-  const val = await gpio.read(PIN) // return 1 (3.3V)
-  gpio.execute('gpio -g write 4 1') // execute a custom command
-}
-
-test().catch(console.error)
+const PIN = 4
+await gpio.configure(PIN, 'out') // configure as output
+await gpio.write(PIN, 1) // set pin to 3.3V
+setTimeout(() => { gpio.write(PIN, 0) }, 5000)
+const val = await gpio.read(PIN) // return 1 (3.3V)
+gpio.execute('gpio -g write 4 1') // execute a custom command
 ```
